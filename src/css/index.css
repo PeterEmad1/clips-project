@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import "tailwindcss";
+
+body {
+  @apply bg-[radial-gradient(circle,#1e293b,#0f172a,#020617)] text-white font-["Orbitron",sans-serif] ;
+}
+
+@layer utilities {
+  @keyframes appear-spin {
+    0% {
+      opacity: 0;
+      /* transform: rotate(0deg) scale(0.5); */
+    }
+    100% {
+      opacity: 1;
+      /* transform: rotate(720deg) scale(1); */
+    }
+  }
+
+  .animate-appear-spin {
+    animation: appear-spin 2s ease-out forwards;
+  }
+
+  .text-outline-white {
+    text-shadow:
+      -0.5px -0.5px 0 #fff,
+      0.5px -0.5px 0 #fff,
+      -0.5px 0.5px 0 #fff,
+      0.5px 0.5px 0 #fff;
+  }
+  .text-outline-black {
+    text-shadow:
+      -0.5px -0.5px 0 #000,
+      0.5px -0.5px 0 #000,
+      -0.5px 0.5px 0 #000,
+      0.5px 0.5px 0 #000;
+  }
+}
+@layer utilities {
+  /* Appear + 2 rotations */
+  @keyframes appear-spin {
+    0% {
+      opacity: 0;
+      /* transform: rotate(0deg) scale(0.5); */
+    }
+    100% {
+      opacity: 1;
+      /* transform: rotate(720deg) scale(1); */
+    }
+  }
+
+  .animate-appear-spin {
+    animation: appear-spin 1.5s ease-out forwards;
+  }
+
+  /* Smooth transition */
+  .smooth {
+    transition: all 0.4s ease;
+  }
+}

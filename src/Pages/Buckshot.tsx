@@ -5,9 +5,9 @@ function Buckshot() {
     <GamePage
       title="Buckshot"
       videos={[
-        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "https://youtu.be/groySLgKM94",
+        "https://youtu.be/_RDJ4v_KTjA",
+        "https://youtu.be/dHwdN79FuYg",
       ]}
     />
   );

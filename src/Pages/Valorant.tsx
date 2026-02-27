@@ -1,4 +1,4 @@
-import GamePage from "../GamePage";
+import GamePage from "../components/GamePage";
 
 function Valorant() {
   return (

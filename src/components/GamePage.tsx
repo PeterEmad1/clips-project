@@ -1,4 +1,4 @@
-import Video from "../src/Video";
+import Video from "./Video";
 
 type Props = {
   title: string;

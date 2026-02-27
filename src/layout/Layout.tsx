@@ -1,5 +1,5 @@
-import { Outlet, NavLink } from "react-router-dom";
-import Logo from "../Logo";
+import { Outlet} from "react-router-dom";
+import LayoutNavBar from "../components/LayoutNavBar";
 
 function Layout() {
   return (
@@ -10,15 +10,7 @@ function Layout() {
     >
       {/* NAVBAR */}
 
-      <nav className="bg-gray-900 p-4 flex justify-between items-center px-10 text-xl">
-        <Logo />
-        <div className="flex gap-6">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/valorant">Valorant</NavLink>
-          <NavLink to="/brawlhalla">Brawlhalla</NavLink>
-          <NavLink to="/buckshot">Buckshot</NavLink>
-        </div>
-      </nav>
+      <LayoutNavBar />
 
       {/* THIS IS REQUIRED */}
       <Outlet />

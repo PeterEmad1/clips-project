@@ -7,7 +7,7 @@ type Props = {
 
 function GamePage({ title, videos }: Props) {
   return (
-    <div className="container mx-auto px-4 py-8 min-h-[80vh]">
+    <div className="container mx-auto px-4 py-8 min-h-screen">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold mb-4">{title}</h1>
       </div>

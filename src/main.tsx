@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import "../src/css/index.css";
 import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter basename="/clips-project">
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>,
 );

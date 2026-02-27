@@ -14,10 +14,7 @@ function Clapper({ size = 80 }: Props) {
     >
       {/* TOP PART — ONLY THIS MOVES */}
       <div
-        className="absolute left-0 top-0 w-full
-                   bg-[repeating-linear-gradient(45deg,black_0px,black_8px,white_8px,white_16px)]
-                   transition-transform duration-300
-                   group-hover:-rotate-12"
+        className="absolute left-0 top-0 w-full bg-[repeating-linear-gradient(45deg,black_0px,black_8px,white_8px,white_16px)] transition-transform duration-300 group-hover:-rotate-12"
         style={{
           height: topHeight,
           transformOrigin: "left bottom",
@@ -26,8 +23,7 @@ function Clapper({ size = 80 }: Props) {
 
       {/* BOTTOM PART — STAYS STILL */}
       <div
-        className="absolute left-0 border border-white rounded-sm
-                   bg-[repeating-linear-gradient(45deg,#111_0px,#111_12px,#444_12px,#444_24px)]"
+        className="absolute left-0 border border-white rounded-sm bg-[repeating-linear-gradient(45deg,#111_0px,#111_12px,#444_12px,#444_24px)]"
         style={{
           top: topHeight,
           height: bodyHeight,

@@ -9,12 +9,7 @@ function Logo() {
       </div>
 
       {/* TEXT */}
-      <p
-        className="text-purple-400 text-4xl text-outline-white
-                   transition-all duration-300
-                   group-hover:scale-110
-                   group-hover:drop-shadow-[0_0_15px_#a855f7]"
-      >
+      <p className="text-purple-400 text-4xl text-outline-white transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_#a855f7]">
         Clips
       </p>
     </div>
